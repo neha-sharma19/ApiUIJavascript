@@ -1,10 +1,6 @@
 'use strict';
-
 const webdriver = require('selenium-webdriver');
-const chromedriver = require('chromedriver');
-
-
-module.exports = class BaseApplication {
+module.exports = class BaseApplication  {
 	constructor() {
 		this.driver = new webdriver.Builder()
 		.forBrowser("chrome")
@@ -12,27 +8,27 @@ module.exports = class BaseApplication {
 		this.driver.manage().window().maximize();
 	}
 
-	openUrl({ url }) {
+	openUrl(url) {
 		this.driver.get(url);
 	}
 
 	delay(mls) {
-    this.driver.sleep(mls);
-  }
+       this.driver.sleep(mls);
+   }
 
 	refreshPage() {
-    this.driver.navigate().refresh();
+       this.driver.navigate().refresh();
   }
 
     navigateBack() {
-    this.driver.navigate().back();
+       this.driver.navigate().back();
 }
 
     getCurrentUrl() {
     return this.driver.getCurrentUrl();
 }
-    closeBrowser(){
-	this.driver.quit();
-}
 
+    closeBrowser(){
+	      this.driver.quit();
+}
 }

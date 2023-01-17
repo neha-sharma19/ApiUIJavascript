@@ -56,7 +56,7 @@ module.exports = class PlanPage {
    }
 
    selectOneYearPlan() {
-	this.seleniumFunctions.isElementLocated({ selector: selectors.oneYearPlanSelector });
-	this.seleniumFunctions.actionDoubleClick({ selector: selectors.oneYearPlanSelector });
+	   this.seleniumFunctions.isElementLocated({ selector: selectors.oneYearPlanSelector });
+	   this.seleniumFunctions.actionDoubleClick({ selector: selectors.oneYearPlanSelector });
 }
 }

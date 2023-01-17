@@ -7,4 +7,4 @@ const pagesToExport = [
   'PlanPage',
   'ProductsPage',
 ]
-module.exports = pagesToExport.map((page) => require(path.resolve('pages', page)))
+module.exports = pagesToExport.map((page) => require(path.resolve('Pages', page)))

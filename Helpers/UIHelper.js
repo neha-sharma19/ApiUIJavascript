@@ -1,5 +1,5 @@
 const BaseApplication = require('../BaseApp/BaseApplication');
-const Pages = require('../pages');
+const Pages = require('../Pages');
 
 module.exports = class UIHelper extends BaseApplication {
   constructor() {
